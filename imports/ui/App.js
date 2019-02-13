@@ -1,17 +1,30 @@
 import React from "react";
 import TitleBar from "./TitleBar";
+import LandingImage from "./LandingImage";
 
 
 export default class App extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            navLinks: [
+                {name: "Home", link: "localhost:3000"},
+                {name: "GitHub", link: "localhost:3000"},
+                {name: "YouTube", link: "localhost:3000"}
+            ]
+        };
+    }
+
     render() {
-        let navLinks = [
-            {name: "Home", link: "localhost:3000"},
-            {name: "REEE", link: "localhost:3000"}
-        ];
+
         return (
-            <div>
-                <TitleBar items={navLinks}/>
-            </div>
+            <React.Fragment>
+                <div>
+                    <TitleBar items={this.state.navLinks}/>
+                </div>
+                <LandingImage/>
+            </React.Fragment>
+
         )
     }
 }

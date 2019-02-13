@@ -1,0 +1,29 @@
+.landing-image {
+  background-image: url("https://i.imgur.com/DVJ1VGU.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+
+  .heading {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+  }
+
+  .down-arrow {
+    position: absolute;
+    left: 50%;
+    margin-bottom: 2000px;
+    top: 90%;
+    font-size: 250%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+}
