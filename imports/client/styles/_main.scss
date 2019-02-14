@@ -12,8 +12,11 @@ body {
   color: #555555;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 1.6rem;
+  overflow-x: hidden;
 }
 
 @import "./components/_nav-bar.scss";
 @import "./components/_landing-image.scss";
 @import "./components/_github-stats.scss";
+@import "./components/_github-table.scss";
+@import "./components/_projectsection.scss";

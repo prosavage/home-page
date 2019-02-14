@@ -1,0 +1,35 @@
+.projects {
+  border-collapse: collapse;
+  overflow: auto;
+
+  a {
+    color: white;
+  }
+
+  td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #373737;
+  }
+  tr:nth-child(even) {
+    background-color: #3c3c3c;
+  }
+
+  tr:hover {
+    background-color: #2d2d2d;
+  }
+
+  th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+
+
+}

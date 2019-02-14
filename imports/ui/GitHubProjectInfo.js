@@ -9,22 +9,29 @@ export default class GitHubProjectInfo extends React.Component {
             open_issues: 0,
             created: '',
             language: '',
-            description: ''
+            description: '',
+            link: '',
+            homepage: ''
         };
     }
+
     getInfo() {
         let that = this;
+
         function setInfo() {
             let info = JSON.parse(this.responseText);
-            that.setState( {
+            that.setState({
                 name: info.name,
-               stargazers: info.stargazers_count,
+                stargazers: info.stargazers_count,
                 open_issues: info.open_issues,
                 created: info.created_at,
                 language: info.language,
-                description: info.description
+                description: info.description,
+                link: info.html_url,
+                homepage: info.homepage
             });
         }
+
         let request = new XMLHttpRequest();
         request.onload = setInfo;
         request.open('get', 'https://api.github.com/repos/' + this.props.user + '/' + this.props.repo);
@@ -34,11 +41,13 @@ export default class GitHubProjectInfo extends React.Component {
 
     render() {
         return (
-          <div>
-              {this.getInfo()}
-              <h4>{this.state.name}</h4>
-              <p>{this.state.description}</p>
-          </div>
+            <tr>
+                {this.getInfo()}
+                <td><a href={this.state.link}>{this.state.name}</a></td>
+                <td>{this.state.description}</td>
+                <td>{this.state.language}</td>
+                <td>{this.state.stargazers}</td>
+            </tr>
         );
     }
 
