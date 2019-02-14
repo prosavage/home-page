@@ -14,12 +14,16 @@
     color: white;
     font-family: 'Quicksand', sans-serif;
     text-align: center;
+
+    h1:hover {
+      content: 'Naman Gupta';
+    }
   }
+
 
   .down-arrow {
     position: absolute;
     left: 50%;
-    margin-bottom: 2000px;
     top: 90%;
     font-size: 250%;
     transform: translate(-50%, -50%);

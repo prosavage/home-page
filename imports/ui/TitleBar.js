@@ -24,7 +24,7 @@ export default class TitleBar extends React.Component {
 
     handleScroll (event) {
         this.setState({
-            backgroundColor: 'black'
+            backgroundColor: '#2F363F'
         });
         if (window.pageYOffset === 0) {
             this.setState({

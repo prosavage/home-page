@@ -1,6 +1,7 @@
 import React from "react";
 import TitleBar from "./TitleBar";
 import LandingImage from "./LandingImage";
+import GithubStats from "./GithubStats";
 
 
 export default class App extends React.Component {
@@ -23,6 +24,7 @@ export default class App extends React.Component {
                     <TitleBar items={this.state.navLinks}/>
                 </div>
                 <LandingImage/>
+                <GithubStats/>
             </React.Fragment>
 
         )
