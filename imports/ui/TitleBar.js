@@ -7,6 +7,7 @@ export default class TitleBar extends React.Component {
             backgroundColor: '',
         };
     }
+
     renderItems() {
         if (this.props.items.length !== 0) {
             return this.props.items.map((item) => {
@@ -14,15 +15,16 @@ export default class TitleBar extends React.Component {
             });
         }
     }
+
     componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll.bind(this), { passive: true })
+        window.addEventListener('scroll', this.handleScroll.bind(this), {passive: true})
     };
 
     componentWillUnmount() {
         window.removeEventListener('scroll', this.handleScroll.bind(this))
     }
 
-    handleScroll (event) {
+    handleScroll(event) {
         this.setState({
             backgroundColor: '#2F363F'
         });
@@ -32,6 +34,7 @@ export default class TitleBar extends React.Component {
             });
         }
     }
+
     render() {
 
         const styles = {
@@ -39,13 +42,13 @@ export default class TitleBar extends React.Component {
                 backgroundColor: this.state.backgroundColor,
             }
         };
-        const { navBarStyle } = styles;
+        const {navBarStyle} = styles;
         return (
-          <div className="nav-bar" style={navBarStyle}>
-              <ul>
-                  {this.renderItems()}
-              </ul>
-          </div>
+            <div className="nav-bar" style={navBarStyle}>
+                <ul>
+                    {this.renderItems()}
+                </ul>
+            </div>
         );
     }
 }

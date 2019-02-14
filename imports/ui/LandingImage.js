@@ -9,7 +9,11 @@ export default class LandingImage extends React.Component {
                     <h3>Aspiring Developer.</h3>
                 </div>
                 <div className="down-arrow">
-                    <i className="fas fa-angle-double-down"></i>
+                    <div className="arrow">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         )
