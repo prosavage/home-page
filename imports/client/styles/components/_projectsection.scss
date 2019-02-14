@@ -1,0 +1,44 @@
+.parallax {
+  background-image: url('https://i.imgur.com/oepGw0a.png');
+  height: 35vh;
+  width: 100vw;
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.parallax-text {
+  position: relative;
+  display: inline-block;
+  top: 50%;
+  background-color: transparent;
+  text-align: center;
+  color: white;
+  font-family: Quicksand;
+
+  h3 {
+    text-decoration: underline;
+  }
+
+  button {
+    background-color: #FF4848;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: #E83350;
+  }
+
+
+}
