@@ -1,0 +1,84 @@
+.profiles-root {
+  height: 35vh;
+  width: 100vw;
+  background-color: #2F363F;
+  text-align: center;
+
+  .buttons {
+    position: relative;
+    display: inline-block;
+    top: 25%;
+    color: white;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+    button {
+      margin-right: 5rem;
+      margin-left: 5rem; // :) I am stupid!
+      background-color: white;
+      border: 1px;
+      color: black;
+      padding: 50px 50px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      border-radius: 15px;
+      // Hover animation stuffs
+      -webkit-transition: all 0.50s ease-in-out;
+      -moz-transition: all 0.50s ease-in-out;
+      -ms-transition: all 0.50s ease-in-out;
+      -o-transition: all 0.50s ease-in-out;
+      -webkit-box-shadow: 0 8px 12px -6px black;
+      -moz-box-shadow: 0 8px 12px -6px black;
+      box-shadow: 0 8px 12px -6px black;
+    }
+
+    button:hover {
+      -webkit-box-shadow: 0 12px 18px -6px black;
+      -moz-box-shadow: 0 12px 18px -6px black;
+      box-shadow: 0 12px 18px -6px black;
+      i {
+        color: black;
+      }
+    }
+
+
+    .discord {
+      color: #7289da;
+    }
+
+    .discord:hover {
+      background-color: #7289da;
+    }
+
+    .patreon {
+      color: #f96854;
+    }
+
+
+    .patreon:hover {
+      background-color: #f96854;
+    }
+
+    .instagram {
+      color: #833ab4;
+    }
+
+    .instagram:hover {
+      background-color: #833ab4;
+    }
+
+    .spigot {
+      color: #ffcc00;
+    }
+
+
+    .spigot:hover {
+      background-color: #ffcc00;
+    }
+
+
+  }
+
+}

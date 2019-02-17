@@ -5,8 +5,8 @@ export default class LandingImage extends React.Component {
         return (
             <div className="landing-image">
                 <div className="heading">
-                    <h1>P R O S A V A G E</h1>
-                    <h3>Aspiring Developer.</h3>
+                    <h1>{this.props.heading}</h1>
+                    <h3>{this.props.subtitle}</h3>
                 </div>
                 <div className="down-arrow">
                     <div className="arrow">

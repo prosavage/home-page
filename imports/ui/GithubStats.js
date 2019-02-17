@@ -25,8 +25,8 @@ export default class GithubStats extends React.Component {
                         <GitHubProjectInfo user="ProSavage" repo="TheBreakfastClub"/>
                         <GitHubProjectInfo user="ProSavage" repo="home-page"/>
                     </table>
-
                 </div>
+                <br/>
             </div>
         );
     }

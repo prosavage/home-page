@@ -3,6 +3,7 @@ import TitleBar from "./TitleBar";
 import LandingImage from "./LandingImage";
 import GithubStats from "./GithubStats";
 import ProjectSection from "./ProjectSection";
+import Profiles from "./Profiles";
 
 
 export default class App extends React.Component {
@@ -25,9 +26,10 @@ export default class App extends React.Component {
                 <div>
                     <TitleBar items={this.state.navLinks}/>
                 </div>
-                <LandingImage/>
+                <LandingImage heading="P R O S A V A G E" subtitle="Aspiring Developer."/>
                 <GithubStats/>
                 <ProjectSection/>
+                <Profiles/>
             </React.Fragment>
 
         )
