@@ -14,7 +14,7 @@ export default class App extends React.Component {
                 {name: "Home", link: "http://prosavage.net"},
                 {name: "GitHub", link: "https://github.com/ProSavage"},
                 {name: "YouTube", link: "https://www.youtube.com/channel/UCug2TIYp3roHtQvMXYQ3atg"},
-                {name: "SavageFactions", link: "http://prosavage.net/Factions"}
+                {name: "SavageFactions", link: "https://github.com/ProSavage/SavageFactions"}
             ]
         };
     }
@@ -26,7 +26,7 @@ export default class App extends React.Component {
                 <div>
                     <TitleBar items={this.state.navLinks}/>
                 </div>
-                <LandingImage heading="P R O S A V A G E" subtitle="Aspiring Developer."/>
+                <LandingImage heading="P R O S A V A G E" subtitle="'Coding is Cool'"/>
                 <GithubStats/>
                 <ProjectSection/>
                 <Profiles/>

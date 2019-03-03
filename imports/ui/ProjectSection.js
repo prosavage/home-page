@@ -9,7 +9,9 @@ export default class ProjectSection extends React.Component {
                     <div className="parallax-text">
                         <h3>SavageFactions</h3>
                         <br/>
-                        <button>Learn More</button>
+                        <a href="https://github.com/ProSavage/SavageFactions">
+                            <button>Learn More</button>
+                        </a>
                     </div>
                 </div>
 
