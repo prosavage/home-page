@@ -21,9 +21,6 @@
   color: white;
   font-family: Quicksand;
 
-  h3 {
-    text-decoration: underline;
-  }
 
   button {
     background-color: #FF4848;
@@ -34,6 +31,7 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    cursor: pointer;
   }
 
   button:hover {

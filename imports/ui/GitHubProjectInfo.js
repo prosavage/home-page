@@ -1,5 +1,5 @@
 import React from 'react';
-import GetResponse from "../api/GetResponse";
+//import GetResponse from "../api/GetResponse";
 
 export default class GitHubProjectInfo extends React.Component {
     constructor() {
@@ -36,7 +36,7 @@ export default class GitHubProjectInfo extends React.Component {
         let request = new XMLHttpRequest();
         request.onload = setInfo;
         // Make your own request get & send if you want to use this part of the code, I had to hide some stuff!
-        GetResponse.getResponse(request, this.props.user, this.props.repo);
+     //   GetResponse.getResponse(request, this.props.user, this.props.repo);
     }
 
     render() {

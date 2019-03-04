@@ -26,10 +26,15 @@ export default class App extends React.Component {
                 <div>
                     <TitleBar items={this.state.navLinks}/>
                 </div>
-                <LandingImage heading="P R O S A V A G E" subtitle="'Coding is Cool'"/>
-                <GithubStats/>
+                <LandingImage landingElem={this.landingElem}  heading="P R O S A V A G E" subtitle="'Coding is Cool'"/>
+                <div ref={(el) => {if(el && !this.landingElem) {
+                    this.landingElem = el;
+                    this.forceUpdate();
+                }}}>
+                 <GithubStats  />
                 <ProjectSection/>
                 <Profiles/>
+                </div>
             </React.Fragment>
 
         )

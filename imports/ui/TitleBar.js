@@ -4,7 +4,7 @@ export default class TitleBar extends React.Component {
     constructor() {
         super();
         this.state = {
-            backgroundColor: '',
+            backgroundColor: false,
         };
     }
 
@@ -25,26 +25,23 @@ export default class TitleBar extends React.Component {
     }
 
     handleScroll(event) {
-        this.setState({
-            backgroundColor: '#2F363F'
-        });
         if (window.pageYOffset === 0) {
+            if(this.state.backgroundColor)
             this.setState({
-                backgroundColor: ''
+                backgroundColor: false
+            });
+        } else {
+            if(!this.state.backgroundColor)
+            this.setState({
+                backgroundColor: true
             });
         }
     }
 
     render() {
 
-        const styles = {
-            navBarStyle: {
-                backgroundColor: this.state.backgroundColor,
-            }
-        };
-        const {navBarStyle} = styles;
         return (
-            <div className="nav-bar" style={navBarStyle}>
+            <div className="nav-bar" style={{ animation: this.state.backgroundColor ? "fadeIn .5s ease": "fadeOut .5s ease", backgroundColor: this.state.backgroundColor ? "#2F363F": ""}}>
                 <ul>
                     {this.renderItems()}
                 </ul>
