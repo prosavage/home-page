@@ -1,8 +1,16 @@
+@keyframes fadeIn {
+  from {background-color: transparent;}
+  to {background-color: #2F363F;}
+}
+@keyframes fadeOut {
+  from {background-color: #2F363F;}
+  to {background-color: transparent;}
+}
+
 .nav-bar {
   font-family: 'Quicksand', sans-serif;
   display: inline;
   text-align: center;
-
   position: fixed;
   width: 100vw;
   z-index: 999999;
